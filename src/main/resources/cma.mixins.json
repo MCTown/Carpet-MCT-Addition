@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "tech.mctown.cma.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CrashReport_noopMixin",
+    "MobEntity_makarenaMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
