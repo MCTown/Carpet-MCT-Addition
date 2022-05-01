@@ -19,6 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
+      "tech.mctown.cma.CMAEntry"
     ]
   },
   "mixins": [
@@ -26,7 +27,7 @@
   ],
 
   "depends": {
-    "minecraft": "1.18.2",
+    "minecraft": "1.18.x",
     "fabricloader": ">=0.13",
     "carpet": "*"
   },
