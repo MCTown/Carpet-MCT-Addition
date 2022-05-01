@@ -1,6 +1,7 @@
 package tech.mctown.cma.mixins;
 
 import net.minecraft.block.entity.SignBlockEntity;
+import net.minecraft.item.Items;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
@@ -24,7 +25,7 @@ public abstract class SignBlockEntityMixin_runCommandOnSign {
                 rawText.append(t.getString());
             }
             String text = rawText.toString();
-            if (text.startsWith("/")) {
+            if (text.startsWith("/") && player.getMainHandStack().isOf(Items.AIR) && !player.isSneaking()) {
                 String actualCommand = text.substring(1);
                 // No cheating!
                 ServerCommandSource commandSource = player.getCommandSource();

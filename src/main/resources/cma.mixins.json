@@ -3,7 +3,8 @@
   "package": "tech.mctown.cma.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "SignBlockEntityMixin_runCommandOnSign"
+    "SignBlockEntityMixin_runCommandOnSign",
+    "SignBlockEntityMixin_editableSign"
   ],
   "client": [
   ],
