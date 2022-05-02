@@ -23,7 +23,7 @@ public class CMASettings {
     public static boolean editableSign = false;
 
     @Rule(
-            desc = "Flint and Steel activates observer.",
+            desc = "Observer will be activied when player hold flint and steel and right-clicked it.",
             category = {CMA, CREATIVE}
     )
     public static boolean flintAndSteelActivatesObserver = false;
