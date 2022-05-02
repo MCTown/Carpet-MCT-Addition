@@ -37,3 +37,12 @@
 - 默认值: `false`
 - 参考选项: `false`, `true`
 - 分类: `CMA`, `SURVIVAL`
+
+### 打火石激活观察者 (flintAndSteelActivatesObserver)
+
+打火石右键观察者的任意方向可以激活该观察者
+
+- 类型: `boolean`
+- 默认值: `false`
+- 参考选项: `false`, `true`
+- 分类: `CMA`, `SURVIVAL`
