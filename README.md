@@ -4,9 +4,9 @@
 
 **English** | [中文](README_CN.md)
 
-An additional mod of Carpet
+An additional mod of Carpet.
 
-The default configuration will not change any game behavior at all
+The default configuration will not change any game behavior at all.
 
 ## Carpet-MCT-Addition Mod Settings
 # Index
@@ -31,4 +31,4 @@ Player can edit the sign when it's right-clicked if the player is sneaking and n
 - Categories: `CMA`, `SURVIVAL`
 
 # Command
-Developing
+Developing...
