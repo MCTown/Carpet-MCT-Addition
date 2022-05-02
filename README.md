@@ -17,7 +17,6 @@ The default configuration will not change any vanilla game behavior.
     - [Rules](#rules)
         - [runCommandOnSign](#runcommandonsign)
         - [editableSign](#editablesign)
-    - [Command](#command)
 
 <!-- /TOC -->
 
@@ -40,7 +39,3 @@ Player can edit the sign when it's right-clicked if the player is sneaking and n
 - Default: `false`
 - Suggested options: `false`, `true`
 - Categories: `CMA`, `SURVIVAL`
-
-## Command
-
-Developing...
