@@ -15,7 +15,7 @@
     - [规则](#%E8%A7%84%E5%88%99)
         - [右键告示牌运行指令 runCommandOnSign](#%E5%8F%B3%E9%94%AE%E5%91%8A%E7%A4%BA%E7%89%8C%E8%BF%90%E8%A1%8C%E6%8C%87%E4%BB%A4-runcommandonsign)
         - [右键告示牌编辑文字 editableSign](#%E5%8F%B3%E9%94%AE%E5%91%8A%E7%A4%BA%E7%89%8C%E7%BC%96%E8%BE%91%E6%96%87%E5%AD%97-editablesign)
-        - [右键告示牌编辑文字 editableSign](https://github.com/MCTown/Carpet-MCT-Addition/blob/main/README_CN.md#%E6%89%93%E7%81%AB%E7%9F%B3%E6%BF%80%E6%B4%BB%E8%A7%82%E5%AF%9F%E8%80%85-flintandsteelactivatesobserver)
+        - [打火石激活观察者 editableSign](https://github.com/MCTown/Carpet-MCT-Addition/blob/main/README_CN.md#%E6%89%93%E7%81%AB%E7%9F%B3%E6%BF%80%E6%B4%BB%E8%A7%82%E5%AF%9F%E8%80%85-flintandsteelactivatesobserver)
 <!-- /TOC -->
 
 ## 规则
