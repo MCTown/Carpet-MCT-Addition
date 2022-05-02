@@ -12,7 +12,7 @@ The default configuration will not change any game behavior at all
 # Index
 # Rules
 
-## 右键告示牌运行指令 (runCommandOnSign)
+## runCommandOnSign
 
 Execute the command on the sign if it's right-clicked by player who is not sneaking nor holding anything in the main hand,and texts must start with '/'.
 
@@ -21,7 +21,7 @@ Execute the command on the sign if it's right-clicked by player who is not sneak
 - Suggested options: `false`, `true`
 - Categories: `CMA`, `SURVIVAL`
 
-## 右键告示牌编辑文字 (editableSign)
+## editableSign
 
 Player can edit the sign when it's right-clicked if the player is sneaking and not holding anything in the main hand.
 
@@ -31,4 +31,4 @@ Player can edit the sign when it's right-clicked if the player is sneaking and n
 - Categories: `CMA`, `SURVIVAL`
 
 # Command
-开发中
+Developing
