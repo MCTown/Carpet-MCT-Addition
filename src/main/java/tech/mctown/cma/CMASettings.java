@@ -9,7 +9,7 @@ public class CMASettings {
 
     @Rule(
             desc = "Execute the command on the sign if it's right-clicked by player who is not sneaking nor holding " +
-                    "anything in the main hand,and texts must start with '/'.",
+                    "anything in the main hand. Texts must start with '/'.",
             category = {CMA, SURVIVAL}
     )
     public static boolean runCommandOnSign = false;
