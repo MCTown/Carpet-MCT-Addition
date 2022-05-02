@@ -2,6 +2,7 @@ package tech.mctown.cma;
 
 import carpet.settings.Rule;
 
+import static carpet.settings.RuleCategory.CREATIVE;
 import static carpet.settings.RuleCategory.SURVIVAL;
 
 public class CMASettings {
@@ -20,4 +21,10 @@ public class CMASettings {
             category = {CMA, SURVIVAL}
     )
     public static boolean editableSign = false;
+
+    @Rule(
+            desc = "Flint and Steel activates observer.",
+            category = {CMA, CREATIVE}
+    )
+    public static boolean flintAndSteelActivatesObserver = false;
 }

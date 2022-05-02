@@ -1,4 +1,4 @@
-package tech.mctown.cma.mixins;
+package tech.mctown.cma.mixins.editableSign;
 
 import net.minecraft.block.entity.SignBlockEntity;
 import net.minecraft.item.Items;
@@ -8,11 +8,10 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import tech.mctown.cma.CMAExtension;
 import tech.mctown.cma.CMASettings;
 
 @Mixin(SignBlockEntity.class)
-public abstract class SignBlockEntityMixin_editableSign {
+public abstract class SignBlockEntityMixin {
     @Shadow abstract public void setEditable(boolean editable);
 
     @Inject(method = "onActivate", at = @At("HEAD"))

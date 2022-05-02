@@ -1,4 +1,4 @@
-package tech.mctown.cma.mixins;
+package tech.mctown.cma.mixins.runCommandOnSign;
 
 import net.minecraft.block.entity.SignBlockEntity;
 import net.minecraft.item.Items;
@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import tech.mctown.cma.CMASettings;
 
 @Mixin(SignBlockEntity.class)
-public abstract class SignBlockEntityMixin_runCommandOnSign {
+public abstract class SignBlockEntityMixin {
     @Shadow abstract Text[] getTexts(boolean filtered);
 
     @Inject(method = "onActivate", at = @At("HEAD"))
