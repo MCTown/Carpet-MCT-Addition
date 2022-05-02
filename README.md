@@ -17,6 +17,7 @@ The default configuration will not change any vanilla game behavior.
     - [Rules](#rules)
         - [runCommandOnSign](#runcommandonsign)
         - [editableSign](#editablesign)
+        - [flintAndSteelActivatesObserver](#flintAndSteelActivatesObserver)
 
 <!-- /TOC -->
 
