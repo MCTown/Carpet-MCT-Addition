@@ -39,3 +39,12 @@ Player can edit the sign when it's right-clicked if the player is sneaking and n
 - Default: `false`
 - Suggested options: `false`, `true`
 - Categories: `CMA`, `SURVIVAL`
+
+### flintAndSteelActivatesObserver
+
+Observer will be activied when player hold flint and steel and right-clicked it.
+
+- Type: `boolean`
+- Default: `false`
+- Suggested options: `false`, `true`
+- Categories: `CMA`, `SURVIVAL`
