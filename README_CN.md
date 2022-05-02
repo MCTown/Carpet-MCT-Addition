@@ -10,7 +10,7 @@
 
 ## Carpet-MCT-Addition 设置
 # 索引
-# [规则]
+# 规则
 
 ## 右键告示牌运行指令 (runCommandOnSign)
 
@@ -30,5 +30,5 @@
 - 参考选项: `false`, `true`
 - 分类: `CMA`, `SURVIVAL`
 
-# [指令]
+# 指令
 开发中
