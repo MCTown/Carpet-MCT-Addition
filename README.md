@@ -17,7 +17,7 @@ The default configuration will not change any vanilla game behavior.
     - [Rules](#rules)
         - [runCommandOnSign](#runcommandonsign)
         - [editableSign](#editablesign)
-        - [flintAndSteelActivatesObserver](#flintAndSteelActivatesObserver)
+        - [flintAndSteelActivatesObserver](#flintandsteelactivatesobserver)
 
 <!-- /TOC -->
 
@@ -43,9 +43,9 @@ Player can edit the sign when it's right-clicked if the player is sneaking and n
 
 ### flintAndSteelActivatesObserver
 
-Observer will be activied when player hold flint and steel and right-clicked it.
+Observer will be activied when player uses Flint and Steel on it. Sneak to light fire on observers.
 
 - Type: `boolean`
 - Default: `false`
 - Suggested options: `false`, `true`
-- Categories: `CMA`, `SURVIVAL`
+- Categories: `CMA`, `CREATIVE`
