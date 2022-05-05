@@ -1,44 +1,40 @@
 on:
-  push:
-    tags:
-    - 'v*'
+  release:
+    types: [published]
 
 name: Create Release
 
 jobs:
   release:
-    name: release
+    name: Upload Release Asset
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code
+      - name: Checkout code
         uses: actions/checkout@v2
-      - name: setup java
+      - name: Setup java
         uses: actions/setup-java@v1
         with:
           java-version: 17
-      - name: build project
+      - name: Build project
         run: |
           chmod +x ./gradlew
           ./gradlew build
-          cd build/libs
-          zip -r artifacts.zip *
-      - name: create release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Find correct Jar
+        id: findjar
+        run: |
+          output="$(find build/libs/ ! -name "*-dev.jar" -type f -printf "%f\n")"
+          echo "::set-output name=jarname::$output"
+      - name: Save build artifacts
+        uses: actions/upload-artifact@v2
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
-      - name: upload artifacts
-        id: upload-release-asset 
+          name: Artifacts for ${{ matrix.branch }}
+          path: build/libs
+      - name: Upload to Github Release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/libs/artifacts.zip
-          asset_name: Artifacts-${{ github.ref_name }}.zip
-          asset_content_type: application/zip
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: build/libs/${{ steps.findjar.outputs.jarname }}
+          asset_name: ${{ steps.findjar.outputs.jarname }}
+          asset_content_type: application/java-archive
