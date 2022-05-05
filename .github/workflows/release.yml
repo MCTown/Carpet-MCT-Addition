@@ -22,7 +22,7 @@ jobs:
       - name: Find correct Jar
         id: findjar
         run: |
-          output="$(find build/libs/ ! -name "*-dev.jar" -type f -printf "%f\n")"
+          output="$(find build/libs/ ! -name "*-dev.jar" ! -name "*-sources.jar" -type f -printf "%f\n")"
           echo "::set-output name=jarname::$output"
       - name: Save build artifacts
         uses: actions/upload-artifact@v2
@@ -38,3 +38,4 @@ jobs:
           asset_path: build/libs/${{ steps.findjar.outputs.jarname }}
           asset_name: ${{ steps.findjar.outputs.jarname }}
           asset_content_type: application/java-archive
+          
