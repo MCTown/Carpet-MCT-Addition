@@ -2,8 +2,7 @@
   "schemaVersion": 1,
   "id": "cma",
   "version": "${version}",
-
-  "name": "Carpet MCT Additions",
+  "name": "Carpet MCT Addition",
   "description": "Random Minecraft features.",
   "authors": [
     "xiaoyu2006",
@@ -13,10 +12,8 @@
     "homepage": "https://www.mctown.tech/",
     "sources": "https://github.com/MCTown/carpet-mct-addition"
   },
-
   "license": "MIT",
-  "icon": "assets/cma/icon.png",
-
+  "icon": "assets/cma/icon.jpeg",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -26,13 +23,12 @@
   "mixins": [
     "cma.mixins.json"
   ],
-
+  "accessWidener": "cma.accesswidener",
   "depends": {
     "minecraft": "1.18.x",
     "fabricloader": ">=0.13",
     "carpet": "*"
   },
-
   "custom": {
     "modmanager": {
       "modrinth": "pY40IXqI"

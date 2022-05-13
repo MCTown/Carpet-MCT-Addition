@@ -14,14 +14,15 @@ import tech.mctown.cma.CMASettings;
 
 @Mixin(SignBlockEntity.class)
 public abstract class SignBlockEntityMixin {
-    @Shadow abstract Text[] getTexts(boolean filtered);
+    @Shadow
+    protected abstract Text[] getTexts(boolean filtered);
 
     @Inject(method = "onActivate", at = @At("HEAD"))
     public void runCommandOnActivated(ServerPlayerEntity player, CallbackInfoReturnable<Boolean> ci) {
         if (CMASettings.runCommandOnSign) {
             Text[] texts = this.getTexts(player.shouldFilterText());
             StringBuilder rawText = new StringBuilder();
-            for (Text t: texts) {
+            for (Text t : texts) {
                 rawText.append(t.getString());
             }
             String text = rawText.toString();

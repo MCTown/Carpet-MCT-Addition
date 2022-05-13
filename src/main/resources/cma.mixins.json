@@ -3,9 +3,9 @@
   "package": "tech.mctown.cma.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "runCommandOnSign.SignBlockEntityMixin",
     "editableSign.SignBlockEntityMixin",
-    "flintAndSteelActivatesObserver.FlintAndSteelItemMixin"
+    "flintAndSteelActivatesObserver.FlintAndSteelItemMixin",
+    "runCommandOnSign.SignBlockEntityMixin"
   ],
   "server": [],
   "client": [],

@@ -2,6 +2,7 @@ package tech.mctown.cma.mixins.flintAndSteelActivatesObserver;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ObserverBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.FlintAndSteelItem;
 import net.minecraft.item.ItemUsageContext;
@@ -26,9 +27,8 @@ public abstract class FlintAndSteelItemMixin {
             BlockState blockState = world.getBlockState(blockPos);
 
             if (blockState.isOf(Blocks.OBSERVER) && !playerEntity.isSneaking()) {
-                if (!world.isClient() && !world.getBlockTickScheduler().isQueued(blockPos, Blocks.OBSERVER)) {
-                    world.createAndScheduleBlockTick(blockPos, blockState.getBlock(), 2);
-                }
+                ObserverBlock observer = (ObserverBlock) blockState.getBlock();
+                observer.scheduleTick(world, blockPos);
                 ci.setReturnValue(ActionResult.success(world.isClient()));
             }
         }

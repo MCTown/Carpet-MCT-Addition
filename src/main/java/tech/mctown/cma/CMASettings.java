@@ -10,7 +10,8 @@ public class CMASettings {
 
     @Rule(
             desc = "Execute the command on the sign if it's right-clicked by player who is not sneaking nor holding " +
-                    "anything in the main hand. Texts must start with '/'.",
+                    "anything in the main hand.",
+            extra = {"Texts must start with '/'."},
             category = {CMA, SURVIVAL}
     )
     public static boolean runCommandOnSign = false;
@@ -23,7 +24,8 @@ public class CMASettings {
     public static boolean editableSign = false;
 
     @Rule(
-            desc = "Observer will be activied when player uses Flint and Steel on it. Sneak to light fire on observers.",
+            desc = "Observer will be activied when player uses Flint and Steel on it.",
+            extra = {"Sneak to light fire on observers."},
             category = {CMA, CREATIVE}
     )
     public static boolean flintAndSteelActivatesObserver = false;
