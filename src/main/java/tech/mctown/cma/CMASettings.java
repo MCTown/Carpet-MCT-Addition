@@ -2,8 +2,9 @@ package tech.mctown.cma;
 
 import carpet.settings.Rule;
 
-import static carpet.settings.RuleCategory.CREATIVE;
-import static carpet.settings.RuleCategory.SURVIVAL;
+import java.lang.annotation.Target;
+
+import static carpet.settings.RuleCategory.*;
 
 public class CMASettings {
     static final String CMA = CMAExtension.MODID;
@@ -29,4 +30,10 @@ public class CMASettings {
             category = {CMA, CREATIVE}
     )
     public static boolean flintAndSteelActivatesObserver = false;
+
+    @Rule(
+            desc = "Enable the usage of /dumpentity",
+            category = {CMA, CREATIVE, COMMAND}
+    )
+    public static String commandDumpEntity = "true";
 }
