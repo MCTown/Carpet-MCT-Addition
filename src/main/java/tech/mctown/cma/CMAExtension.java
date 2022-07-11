@@ -6,7 +6,7 @@ import com.mojang.brigadier.CommandDispatcher;
 import net.minecraft.server.command.ServerCommandSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import tech.mctown.cma.commands.DumpEntitiyCommand;
+import tech.mctown.cma.commands.DumpEntityCommand;
 
 public class CMAExtension implements CarpetExtension {
     public static final CMAExtension INSTANCE = new CMAExtension();
@@ -25,6 +25,6 @@ public class CMAExtension implements CarpetExtension {
 
     @Override
     public void registerCommands(CommandDispatcher<ServerCommandSource> dispatcher) {
-        DumpEntitiyCommand.registerCommand(dispatcher);
+        DumpEntityCommand.registerCommand(dispatcher);
     }
 }

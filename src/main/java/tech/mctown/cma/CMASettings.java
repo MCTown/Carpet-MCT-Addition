@@ -36,4 +36,10 @@ public class CMASettings {
             category = {CMA, CREATIVE, COMMAND}
     )
     public static String commandDumpEntity = "true";
+
+    @Rule(
+            desc = "Op players can spawn bots in different gamemodes.",
+            category = {CMA, SURVIVAL}
+    )
+    public static boolean fakePlayerGamemode = true;
 }
