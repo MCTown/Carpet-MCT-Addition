@@ -5,7 +5,8 @@
   "mixins": [
     "editableSign.SignBlockEntityMixin",
     "flintAndSteelActivatesObserver.FlintAndSteelItemMixin",
-    "runCommandOnSign.SignBlockEntityMixin"
+    "runCommandOnSign.SignBlockEntityMixin",
+    "fakePlayerGamemode.PlayerCommandMixin"
   ],
   "server": [],
   "client": [],
