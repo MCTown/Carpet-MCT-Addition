@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.7-SNAPSHOT'
+    id 'fabric-loom' version '1.10-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -45,7 +45,7 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 //    modImplementation "carpet:fabric-carpet:${project.minecraft_version}-${project.carpet_core_version}"
-    modImplementation "carpet:fabric-carpet:1.21.4-${project.carpet_core_version}"
+    modImplementation "carpet:fabric-carpet:1.21.5-${project.carpet_core_version}"
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
@@ -56,15 +56,6 @@ processResources {
     filesMatching("fabric.mod.json") {
         expand "version": project.version
     }
-//    duplicatesStrategy = DuplicatesStrategy.EXCLUDE // 或者使用 DuplicatesStrategy.INCLUDE 来保留重复项
-//    from(sourceSets.main.resources.srcDirs) {
-//        include '**/*.json'
-//    }
-
-//    // 确保语言文件也被处理
-//    filesMatching("assets/cma/lang/en_us.json") {
-//        expand "version": project.version
-//    }
 }
 
 tasks.withType(JavaCompile).configureEach {
